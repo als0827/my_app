@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   },
   "name": "server",
   "version": "1.0.0",
   "description": "node.js를 이용한 백엔드 서버 구성",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./index.js"
