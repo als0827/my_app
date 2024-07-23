@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about me</title>
+    <title>WikiWiki</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>welcome</h1>
-    <a href="/">home</a>
-    <a href="/main">main</a>
-    <a href="/contact">contact</a>
-    <h2>server home에 접속했습니다.!!!!</h2>
+    <div class="site_header">
+        <h1 class="site_name">
+            <img src="images/logo.png" width="200" alt="">
+        </h1>
+        <div class="site_menu">
+            <a href="/">home</a>
+            <a href="/rainking">ranking</a>
+            <a href="/main">blog</a>
+            <a href="/contact">contact</a>
+            <input type="search" placeholder="인사이드 아웃 누적 관객수">
+            <input type="image" src="images/search.png" width="16">
+        </div>
+    </div>
+    <!-- /.site_header -->
+    <div class="site_visual">
+        <!-- <img src="images/다운로드.jfif" alt="welcome"></div> -->
+        <!-- /.site_visual -->
+    </div>
+    <div class="site_main">
+        <div class="ranking">
+            <div class="ranking_header">
+                <div class="tabs">
+                    <h1>무비차트</h1>
+                    <h2>상영예정작</h2>
+                </div>
+                <button class="all">전체보기 ></button>
+            </div>
+            <!-- /.ranking_header -->
+            <div class="ranking_main"></div>
+            <!-- /.ranking_main -->
+
+        </div>
+        <!-- /.ranking -->
+        <div class="special">
+            <h1>특별관</h1>
+        </div>
+        <!-- /.special -->
+        <div class="info">
+            <h1>안내</h1>
+        </div>
+        <!-- /.info -->
+    </div>
+    <!-- /.site_main -->
+    <div class="site_footer"></div>
+    <!-- /.site_footer -->
 </body>
+
 </html>

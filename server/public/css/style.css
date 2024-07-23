@@ -1,0 +1,49 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    margin: 0 10px;
+}
+.site_header {
+    width: 1280px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site_visual {
+    height: 500px;
+    overflow: hidden;
+    background-image: url('../images/welcome.jfif');
+    background-position: 30% center;
+    background-size: cover;
+}
+.ranking {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.ranking_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.tabs {
+    display: flex;
+}
+.tabs h1, .tabs h2 {
+    font-size: 20px;
+}
+.tabs h2 {
+    color: gray;
+}
+.all {
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 5px 10px
+}
