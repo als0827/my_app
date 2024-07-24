@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON 통신</title>
+    <script>
+        //여기에 js 문법을 사용
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="text-center underlined">로그인</h1>
+    <div class="login-form w-30">
+        <form autocomplete="off" method="post" action="http://localhost:3000/login">
+            <div class="d-flex gap-1">
+                <label for="user_id" class="flex-1">아이디</label>
+                <input type="text" class="flex-3" name="user_id" id="user_id">
+            </div>
+            <div class="d-flex gap-1">
+                <label for="user_pw" class="flex-1">비밀번호</label>
+                <input type="password" class="flex-3" name="user_pw" id="user_pw">
+            </div>
+            <input type="submit" value="로그인">
+            <!-- <button type="submit">로그인</button> -->
+        </form>
+    </div>
+    <script>
+        /*여기에 js 문법을 사용
+        // 자바스크립트 자료형
+        // 1. 숫자: number --> 10, 20..
+        // 2. 문자: string --> "문자(열)" 또는 '문자(열)' 또는 '문자'
+        // 3. 논리 : boolean (bool) --> true, false
+        // 4. 객체 : object (함수, 배열, 객체) --> function, array, object
+        // 5. 클래스 : class (ES6에서 새롭게 등장) --> class
+        // 6. 심볼 : symbol (ES6에서 새롭게 등장) --> Symbol
+        // 7. null : 특수 자료형 --> 객체를 빈 상태로 만들때
+        // 8. undefinded : 특수 자료형 --> 변수 선언하고 초기화하지 않았을 때
+        // 주석 : 실행되지 않는 코드 ㄸ노ㅡㄴ 설명 (한줄주석://, 여러줄 주석: /*..*/)
+    </script>    
+</body>
+</html>
