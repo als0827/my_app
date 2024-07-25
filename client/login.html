@@ -12,7 +12,7 @@
 <body>
     <h1 class="text-center underlined">로그인</h1>
     <div class="login-form w-30">
-        <form autocomplete="off" method="post" action="http://localhost:3000/login">
+        <form autocomplete="off" id="login_f">
             <div class="d-flex gap-1">
                 <label for="user_id" class="flex-1">아이디</label>
                 <input type="text" class="flex-3" name="user_id" id="user_id">
@@ -25,10 +25,59 @@
             <!-- <button type="submit">로그인</button> -->
         </form>
     </div>
-    <script>
+    <script src="script/main.js">
+       /* // 나: 로그인 버튼 누른다를 알고 있으나
+        // 브라우저 : 몰라요!!
+        
+        const h1 = document.querySelector("h1")
+
+        h1.style.color = "red"; // css 조작
+        // 1. 로그인 폼 찾기
+        const loginForm = document.querySelectro("#login_f");
+        // 2. 로그인 폼에 submit 이벤트시 할일 등록
+        loginForm.addEventListener("submit", function(){
+            // 3. id, pw 문자열을 지정된 로그인 요청을 보냄
+                let user_id = document.querySelector("#user_id").value;
+                let user_pw = document.querySelector("#user_pw").value;
+                if(user_id == "") {
+                    alert("아이디를 입력하세요!");
+                    document.querySelector("#user_id").focus(); // 입력칸을 활성화
+                } else if ( user_pw == "") {
+                    alert("비밀번호를 입력하세요");
+                    document.querySelector("#user_pw").focus();
+                }
+                } else {
+                fetch('http://localhost:3000/login', {
+                    method: 'post',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        user_id,
+                        user_pw
+                    })
+                })
+              .then(response => response.json())
+              .then(data => {
+                if(data.islogin) {
+                    alert("로그인 성공!")
+                } else {
+                    alert("로그인 실패! 아이디 또는 비밀번호를 확인하세요!");
+                    location.reload();
+                }
+            });
+        }
+                //console.log(data))
+            // 4. 응답을 받아서 HTML을 조작합니다 (로그인/로그아웃)
+        });
+
+
+        // AJAX : 비동기 통신 --> 서버 통신 후 처리하는 후속조치
+        // Discord - 사전수업 - Javascript | JSON과 비동기 통신 부분 확인
+
         /*여기에 js 문법을 사용
         // 자바스크립트 자료형
-        // 1. 숫자: number --> 10, 20..
+        // 1. 숫자: number --> 10, 20
         // 2. 문자: string --> "문자(열)" 또는 '문자(열)' 또는 '문자'
         // 3. 논리 : boolean (bool) --> true, false
         // 4. 객체 : object (함수, 배열, 객체) --> function, array, object
@@ -36,7 +85,9 @@
         // 6. 심볼 : symbol (ES6에서 새롭게 등장) --> Symbol
         // 7. null : 특수 자료형 --> 객체를 빈 상태로 만들때
         // 8. undefinded : 특수 자료형 --> 변수 선언하고 초기화하지 않았을 때
-        // 주석 : 실행되지 않는 코드 ㄸ노ㅡㄴ 설명 (한줄주석://, 여러줄 주석: /*..*/)
+        // 주석 : 실행되지 않는 코드 ㄸ노ㅡㄴ 설명 (한줄주석://, 여러줄 주석: /*..*/
+        
+        //로그인 버튼.onClick =*/
     </script>    
 </body>
 </html>
